@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+header > li,a,button {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #393e46;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    right:0;
+    box-shadow: 0px 15px 10px -22px #111;
+    max-height: 134px;
+    max-width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    margin-right: auto;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #00adb5;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: #00adb5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #fafafa;
+}
+
+header button:hover {
+    background-color: #00838a;
+}
+
+header button:focus {
+    background-color: #00838a;
+}
+
+p.panamea-logo {
+    font-family: 'Noto Sans JP';
+    margin: auto;
+    font-weight: bolder;
+    font-size: 20px;
+    user-select: none;
+}
+
+p.panamea-logo:hover {
+    cursor:default;
+}
+
+span.logo {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  
+}
+
+span.logo:hover {
+    background-size: 100% 88%;
+    cursor:default;
+}
+
+div.hero-banner {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    margin-top: 120px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "main-text main-text hero-illustration hero-illustration"
+    "hero-cta hero-cta hero-illustration hero-illustration"
+    "hero-cta hero-cta hero-illustration hero-illustration"
+    "number1 number2 number3 number4"
+    ;
+    grid-gap: 0.2rem;
+    color: #393e46;
+}
+
+div.hero-banner > .main-text {
+    font-family: 'Comfortaa', sans-serif;
+    grid-area: main-text;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.hero-banner > .hero-illustration {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    grid-area: hero-illustration;
+    align-items: center;
+}
+
+div.hero-banner > .hero-illustration > svg{
+    margin: auto;
+}
+
+
+div.hero-banner > .hero-cta {
+    display: flex;
+    flex-direction: row;
+    grid-area: hero-cta;
+    width: 100%;
+    height: 100%;
+}
+
+div.hero-btn {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+div.cta {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+}
+
+div.cta > button {
+    display: block;
+    background-color: #00adb5;
+    white-space: nowrap;
+    text-align: left;
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #fafafa;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+div.cta > button:hover {
+    background-color: #00838a;
+    cursor: pointer;
+}
+
+div.hero-banner > .number1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.hero-banner > .number1 > .num {
+    display: flex;
+    order: 1;
+    width: 100%;
+    height: 50%;
+    font-family: 'Noto Sans JP';
+    font-size: 32px;
+}
+
+div.hero-banner > .number1 > .num > p {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero-banner > .number1 > .sub-text {
+    display: flex;
+    order: 2;
+    width: 100%;
+    height: 50%;
+    font-family: 'Comfortaa';
+    font-size: 24px;
+}
+
+div.hero-banner > .number1 > .sub-text > p {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero-banner > .number2 {
+    grid-area: number2;
+}
+
+div.hero-banner > .number2 > .num {
+    display: flex;
+    order: 1;
+    width: 100%;
+    height: 50%;
+    font-family: 'Noto Sans JP';
+    font-size: 32px;
+}
+
+div.hero-banner > .number2 > .num > p {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero-banner > .number2 > .sub-text {
+    display: flex;
+    order: 2;
+    width: 100%;
+    height: 50%;
+    font-family: 'Comfortaa';
+    font-size: 24px;
+}
+
+div.hero-banner > .number2 > .sub-text > p {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.hero-banner > .number3 {
+    grid-area: number3;
+}
+
+div.hero-banner > .number3 > .num {
+    display: flex;
+    order: 1;
+    width: 100%;
+    height: 50%;
+    font-family: 'Noto Sans JP';
+    font-size: 32px;
+}
+
+div.hero-banner > .number3 > .num > p {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero-banner > .number3 > .sub-text {
+    display: flex;
+    order: 2;
+    width: 100%;
+    height: 50%;
+    font-family: 'Comfortaa';
+    font-size: 24px;
+}
+
+div.hero-banner > .number3 > .sub-text > p {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.hero-banner > .number4 {
+    grid-area: number4;
+}
+
+div.hero-banner > .number4 > .num {
+    display: flex;
+    order: 1;
+    width: 100%;
+    height: 50%;
+    font-family: 'Noto Sans JP';
+    font-size: 32px;
+}
+
+div.hero-banner > .number4 > .num > p {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero-banner > .number4 > .sub-text {
+    display: flex;
+    order: 2;
+    width: 100%;
+    height: 50%;
+    font-family: 'Comfortaa';
+    font-size: 24px;
+}
+
+div.hero-banner > .number4 > .sub-text > p {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main-text > .normal-text {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    order: 1;
+    font-size: 44px;
+    text-align: center;
+}
+.main-text > ul {
+    width: 100%;
+    order: 2;
+    margin-bottom: auto;
+    font-size: 40px;
+    list-style: none;
+    color: #00adb5;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 44px;
+}
+
+.main-text > ul > li {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    animation: slide 7.5s steps(5) infinite;
+    float: left;
+}
+
+
+.main-text > ul > li > span {
+    position: relative;
+}
+
+.main-text > ul > li > span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 90px;
+    border-left: 2px solid #00838a;
+    animation: typing 1.5s steps(25) infinite;
+    background: #fafafa;
+    width: 100%;
+}
+
+@keyframes typing {
+    40%, 60%{
+      left: calc(100%);
+    }
+    100%{
+      left: 0;
+    }
+    
+}
+@keyframes slide {
+    100% {
+        top: -450px;
+    }
+}
+
+
+/* Mobile Menu */
+
+
+@media (max-width: 550px) {
+    div.hero-banner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "main-text"
+        "hero-cta"
+        "number1"
+        "number2"
+        "number3"
+        "number4"
+        ;
+
+    }
+    
+
+    div.hero-banner > .hero-illustration {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-text > .normal-text {
+        font-size: 16px;
+    }
+
+    .main-text > ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .nav-links > li:not(:last-child) {
+        display: none;
+    }
+
+    .toggle {
+
+    }
+
+    .main-text > .normal-text {
+        font-size: 32px;
+    }
+
+    .main-text > ul {
+        font-size: 32px;
+    }
+
+    header button {
+        margin-right: 20px;
+    }
+    .bars {
+        position: relative;
+        height: 2px;
+        background: #393e46;
+        width: 18px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .bars::before {
+        position: absolute;
+        height: 2px;
+        background: #393e46;
+        width: 12px;
+        display: inline-block;
+        top: 5px;
+        content: "";
+    }
+    .bars::after {
+        position: absolute;
+        height: 2px;
+        background: #393e46;
+        width: 18px;
+        display: inline-block;
+        top: -5px;
+        content: "";
+    }
+}
